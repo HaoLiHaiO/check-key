@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LKT v2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="cleave.min.js"></script>
+    <script src="cleave-phone.{country}.js"></script>
+  </head>
+  <body>
+    <hr id="system-readmore" />
+    <div class="container p-3">
+      <input
+        id="inputStd"
+        class="input-element input_Style"
+        type="text"
+        placeholder="Enter License Key..."
+        onkeyup="update();"
+      />
+      <input
+        id="inputOld"
+        class="input-elementOld input_Style hidden"
+        type="text"
+        placeholder="Enter License Key..."
+        onkeyup="alternate();"
+      />
+      <input
+        id="clearButton"
+        class="clearBtn"
+        type="submit"
+        value="Clear"
+        onclick="clearFnc();"
+      />
+
+      <h5 class="pt-3 pl-2">License Key Details:</h5>
+      <div>
+        <p id="outVersion" class="pl-2">&nbsp;</p>
+        <p id="outModule" class="pl-2">&nbsp;</p>
+        <p id="outRegion" class="pl-2">&nbsp;</p>
+        <p id="outVolume" class="pl-2">&nbsp;</p>
+        <p id="outSupport" class="pl-2">&nbsp;</p>
+      </div>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
