@@ -1,1 +1,1 @@
-basic key checker example
+basic key checker example using cleavejs
